@@ -1,5 +1,17 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6628077688562532864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d080bea08a82b40bd3be99a30dfde3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &-937838088738180295
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25,7 +37,7 @@ AnimatorState:
   m_Transitions:
   - {fileID: 31992020252201452}
   m_StateMachineBehaviours:
-  - {fileID: 951199983271357862}
+  - {fileID: -6628077688562532864}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -132,7 +144,7 @@ AnimatorStateMachine:
     m_Position: {x: -230, y: 260, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6038207972923251691}
-    m_Position: {x: 120, y: 280, z: 0}
+    m_Position: {x: 40, y: 250, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7245136468504405743}
     m_Position: {x: 30, y: 180, z: 0}
@@ -170,7 +182,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a25cf328a992adc43be2644fe1d67c1d, type: 2}
+  m_Motion: {fileID: 7400000, guid: 98e80165223711f48ac4efa0d8206b3e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -213,8 +225,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
-  m_StateMachineBehaviours:
-  - {fileID: -937838088738180295}
+  m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
