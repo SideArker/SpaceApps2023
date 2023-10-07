@@ -21,11 +21,10 @@ public class LoadingScene : MonoBehaviour
         
         while (loadingAsync.progress < .9f) 
         {
-            loading_text.text = $"Loading... \n({loadingAsync.progress * 100} / 100%)";
+            loading_text.text = $"Loading... \n({loadingAsync.progress * 100}% / 100%)";
             yield return new WaitForSeconds(0.1f);
 
         };
-        Debug.Log(loadingAsync.progress);
         anim.Play("FadeOut");
         while (!FadeFinished.fadeFinish) yield return null;
 
