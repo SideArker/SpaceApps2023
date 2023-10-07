@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/CameraMovement.cs.meta
+guid: a8d080bea08a82b40bd3be99a30dfde3
+========
+guid: 235df8a0147d9d2408ccf68f994fe725
+>>>>>>>> main:Assets/FadeFinished.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
