@@ -380,7 +380,7 @@ MonoBehaviour:
   drill: {fileID: 1779892270017574711}
   drillSpeed: 2
   lineRenderer: {fileID: 1779892269068054752}
-  timer: {fileID: 0}
+  timer: {fileID: 349347841014495168}
 --- !u!114 &349347841014495168
 MonoBehaviour:
   m_ObjectHideFlags: 0

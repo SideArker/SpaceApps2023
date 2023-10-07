@@ -23,6 +23,11 @@ public class Miner : MonoBehaviour
             var newPos = Vector3.down * drillSpeed * Time.deltaTime;
             lineRenderer.SetPosition(1, new Vector3(transform.position.x + 0.07f, drill.transform.position.y + newPos.y));
             drill.transform.position += newPos;
+            if(drill.transform.position.y <= -18)
+            {
+                Engineer.isMining = false;
+                Destroy(gameObject);
+            }
         }
         else if(!timerStarted)
         {
