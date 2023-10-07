@@ -7,7 +7,7 @@ public class LoadingScene : MonoBehaviour
 {
     public static int sceneId;
     [SerializeField] Animator anim;
-    float secondsToWait = 2f;
+    float secondsToWait = 1f;
 
     IEnumerator LoadScene()
     {
@@ -21,7 +21,9 @@ public class LoadingScene : MonoBehaviour
         anim.Play("FadeOut");
         while (!FadeFinished.fadeFinish) yield return null;
         loadingAsync.allowSceneActivation = true;
-        
+
+        FadeFinished.fadeFinish = false;
+            
     }
 
     private void Start()
