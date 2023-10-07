@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
     float currentTime;
     [SerializeField] int startMinutes;
     [SerializeField, Range(0,59)] int startSeconds;
-    [SerializeField] TMP_Text currentTimeText;
+    public TMP_Text currentTimeText;
     public UnityEvent onTimerEnd;
     private void Start()
     {
