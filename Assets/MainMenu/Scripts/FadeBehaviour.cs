@@ -16,7 +16,11 @@ public class FadeBehaviour : StateMachineBehaviour
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateinfo, int layerindex)
     {
-        if(fadeType == fadeBehaviourType.SceneChange) SceneManager.LoadScene(sceneId);
+        if(fadeType == fadeBehaviourType.SceneChange)
+        {
+            LoadingScene.sceneId = sceneId;
+            SceneManager.LoadScene(1);
+        }
         else
         {
             animator.gameObject.SetActive(false);

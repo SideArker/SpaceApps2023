@@ -27,7 +27,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeType: 0
-  sceneId: 1
+  sceneId: 2
 --- !u!1102 &-6442945335930252876
 AnimatorState:
   serializedVersion: 6
@@ -70,13 +70,13 @@ AnimatorStateMachine:
     m_Position: {x: 310, y: 330, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6109941169798349348}
-    m_Position: {x: 10, y: 180, z: 0}
+    m_Position: {x: 30, y: 190, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5274843261143419245}
     m_Position: {x: 320, y: 240, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 77337583120771751}
-    m_Position: {x: -30, y: 290, z: 0}
+    m_Position: {x: 30, y: 280, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1821467404166908521}
     m_Position: {x: 590, y: 330, z: 0}
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeType: 0
-  sceneId: 2
+  sceneId: 3
 --- !u!1101 &848134192826938741
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
