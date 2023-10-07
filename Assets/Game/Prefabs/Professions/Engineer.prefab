@@ -198,9 +198,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ProfessionPanel, Assembly-CSharp
-        m_MethodName: OnBtnClick
+      - m_Target: {fileID: 8258236576291090092}
+        m_TargetAssemblyTypeName: Engineer, Assembly-CSharp
+        m_MethodName: Btn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -299,6 +299,7 @@ GameObject:
   - component: {fileID: 5519234618805276045}
   - component: {fileID: 5519234618805276046}
   - component: {fileID: 9076261326685818439}
+  - component: {fileID: 8258236576291090092}
   m_Layer: 5
   m_Name: Engineer
   m_TagString: Untagged
@@ -384,6 +385,20 @@ MonoBehaviour:
   Count: {fileID: 5519234618882606467}
   damagedIcon: {fileID: 8893660369456925864}
   id: 2
+--- !u!114 &8258236576291090092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5519234618805276040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 169488190f4fda141950d252b5314fc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  miner: {fileID: 1779892269068054764, guid: 31ef7a1f48172dc4d8b4a8fe903400b4, type: 3}
+  btn: {fileID: 5519234618161291060}
 --- !u!1 &5519234618882606477
 GameObject:
   m_ObjectHideFlags: 0
