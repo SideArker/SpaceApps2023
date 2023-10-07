@@ -9,7 +9,7 @@ public class TeamSelector : MonoBehaviour
 
     [SerializeField] int maxAstronautCount = 5;
 
-    [SerializeField] List<int> astronauts = new List<int>();
+    [SerializeField] static List<int> astronauts = new List<int>();
 
     [SerializeField] TMP_Text[] counters = new TMP_Text[6];
     [SerializeField] TMP_Text countText;
@@ -48,7 +48,7 @@ public class TeamSelector : MonoBehaviour
 
     public void removeAstronaut(int astronautID)
     {
-        if(astronauts.Any(x => x == astronautID));
+        if(astronauts.Any(x => x == astronautID))
         {
             astronauts.Remove(astronautID);
         }
