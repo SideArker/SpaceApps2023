@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TeamSelector : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class TeamSelector : MonoBehaviour
 
     [SerializeField] TMP_Text[] counters = new TMP_Text[6];
     [SerializeField] TMP_Text countText;
+    [SerializeField] GameObject hoverTip;
+    [SerializeField] Animator screenFade;
 
     [SerializeField] Color maxColor;
     [SerializeField] Color normalColor;
@@ -23,7 +26,11 @@ public class TeamSelector : MonoBehaviour
     /// 3 - astrophysicist, 4 - explorer, 5 - medic)</param>
     /// 
 
-
+    public void SpawnHoverTip()
+    {
+        CanvasScaler scaler = GetComponentInParent<CanvasScaler>();
+        hoverTip.transform.position = new Vector2(Input.mousePosition.x * scaler.referenceResolution.x / Screen.width * 1.225f, Input.mousePosition.y * scaler.referenceResolution.y / Screen.height);
+    }
     void updateCounters()
     {
         countText.text = astronauts.Count.ToString() + "/" + maxAstronautCount;
@@ -51,6 +58,9 @@ public class TeamSelector : MonoBehaviour
 
     public void StartMission()
     {
-
+        if(astronauts.Count >= maxAstronautCount)
+        {
+            screenFade.Play("ScreenFadeGame");
+        }
     }
 }
