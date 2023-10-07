@@ -22,6 +22,7 @@ public class ProfessionPanel : MonoBehaviour
     {
         count = value;
         Count.text = count.ToString();
+        if (value == 0) Destroy(gameObject);
     }
     public void Damage()
     {

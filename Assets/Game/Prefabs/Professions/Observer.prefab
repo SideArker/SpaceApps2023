@@ -277,8 +277,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a9d4c280a554ecf4a9e349a5bcf071df, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: d514921b38492394aa8402c0099f089d, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -286,7 +286,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 10
 --- !u!1 &5519234618805276040
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,7 +300,7 @@ GameObject:
   - component: {fileID: 5519234618805276046}
   - component: {fileID: 9076261326685818439}
   m_Layer: 5
-  m_Name: Engineer
+  m_Name: Observer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -352,7 +352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9528302, g: 0.42607686, b: 0.42607686, a: 1}
+  m_Color: {r: 0.68350554, g: 0.427451, b: 0.9529412, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -383,7 +383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Count: {fileID: 5519234618882606467}
   damagedIcon: {fileID: 8893660369456925864}
-  id: 2
+  id: 3
 --- !u!1 &5519234618882606477
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,7 +585,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Build miner
+  m_text: observe
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5b3fe395bc745554ab72311bdabfaf65, type: 2}
   m_sharedMaterial: {fileID: 4039492701491641456, guid: 5b3fe395bc745554ab72311bdabfaf65, type: 2}
@@ -720,7 +720,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: engineer
+  m_text: Observer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5b3fe395bc745554ab72311bdabfaf65, type: 2}
   m_sharedMaterial: {fileID: 4039492701491641456, guid: 5b3fe395bc745554ab72311bdabfaf65, type: 2}
@@ -751,7 +751,7 @@ MonoBehaviour:
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 0
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
