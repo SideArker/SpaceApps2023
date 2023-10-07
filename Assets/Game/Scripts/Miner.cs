@@ -10,14 +10,14 @@ public class Miner : MonoBehaviour
 
     private void Start()
     {
-        lineRenderer.SetPosition(0, transform.position);
+        lineRenderer.SetPosition(0, new Vector3(transform.position.x + 0.07f, transform.position.y));
     }
     private void Update()
     {
         if (!drill.IsTrigger)
         {
             var newPos = Vector3.down * drillSpeed * Time.deltaTime;
-            lineRenderer.SetPosition(1, new Vector3(transform.position.x, drill.transform.position.y + newPos.y));
+            lineRenderer.SetPosition(1, new Vector3(transform.position.x + 0.07f, drill.transform.position.y + newPos.y));
             drill.transform.position += newPos;
         }
     }

@@ -8,7 +8,7 @@ public class Drill : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        IsTrigger = true;
+        if(collision.tag == "mineable") IsTrigger = true;
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
