@@ -231,8 +231,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'amongus '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9b437ca4da56dcb4ba8e6484c9a3dd2b, type: 2}
-  m_sharedMaterial: {fileID: 4039492701491641456, guid: 9b437ca4da56dcb4ba8e6484c9a3dd2b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5b3fe395bc745554ab72311bdabfaf65, type: 2}
+  m_sharedMaterial: {fileID: 4039492701491641456, guid: 5b3fe395bc745554ab72311bdabfaf65, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
