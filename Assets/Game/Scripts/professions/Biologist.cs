@@ -27,6 +27,7 @@ public class Biologist : MonoBehaviour
     }
     public void Examinate()
     {
+        print("XD");
         var posTrans = SelectionController.Instance.sender;
         Instantiate(prefab, posTrans);
     }
