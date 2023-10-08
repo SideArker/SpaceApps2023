@@ -8,7 +8,6 @@ public class Diver : MonoBehaviour
 {
     [SerializeField] Button btn;
     [SerializeField] GameObject prefab;
-
     public static Diver Instance { get; private set; }
     private void Awake()
     {

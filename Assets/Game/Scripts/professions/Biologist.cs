@@ -8,7 +8,6 @@ public class Biologist : MonoBehaviour
 {
     [SerializeField] Button btn;
     [SerializeField] GameObject prefab;
-
     public static Biologist Instance { get; private set; }
     private void Awake()
     {

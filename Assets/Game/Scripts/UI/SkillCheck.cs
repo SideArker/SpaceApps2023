@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class SkillCheck : MonoBehaviour
 {
+    public static SkillCheck instance;
+
     [SerializeField] float lerpDuration = 1f;
 
     [SerializeField] Slider skillcheckSlider;
@@ -15,21 +17,32 @@ public class SkillCheck : MonoBehaviour
 
     [SerializeField] [Range(0f, .350f)] float rangeValue;
 
-    public UnityEvent SkillCheckPass;
+    public bool skillCheckResult { get; private set; }
+    public bool isDone { get; private set; }
     float correctValue;
 
     bool stop = false;
 
+    private void Awake()
+    {
+        instance = this;
+    }
+
     void Randomise()
     {
         correctValue = Random.Range(0f, 1f);
-        lerpDuration = Random.Range(0.5f, 1.5f);
+        lerpDuration = Random.Range(1.5f, 2f);
+
+        skillCheckResult = false;
+        isDone = false;
 
         correctValueIndicator.value = correctValue;
     }
 
     IEnumerator moveSliderValue()
     {
+        gameObject.transform.GetChild(0).gameObject.SetActive(true);
+
         stop = false;
         float timeElapsed = 0;
 
@@ -43,20 +56,22 @@ public class SkillCheck : MonoBehaviour
             {
                 float stoppedValue = skillcheckSlider.value;
 
-                Debug.Log("stopped at " + stoppedValue);
-                Debug.Log("Range is between: " + (correctValue - rangeValue) + " - " + (correctValue + rangeValue));
                 if(stoppedValue > correctValue - rangeValue && stoppedValue < correctValue + rangeValue)
                 {
-                    Debug.Log("invoke");
-                    SkillCheckPass.Invoke();
+                    skillCheckResult = true;
                 }
                 else
                 {
-                    Debug.Log("skill check fail");
+                    skillCheckResult = false;
+
                 }
                 break;
             }
         }
+        isDone = true;
+        skillcheckSlider.value = skillcheckSlider.maxValue;
+        gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        yield break;
     }
     public void SkillCheckStart()
     {

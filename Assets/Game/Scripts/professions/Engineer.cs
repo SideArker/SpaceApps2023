@@ -9,16 +9,24 @@ public class Engineer : MonoBehaviour
     public static bool isMining = false;
     [SerializeField] GameObject miner;
     [SerializeField] Button btn;
+    public int oresMined { get; private set; }
     public static Engineer Instance { get; private set; }
     private void Awake()
     {
         Instance = this;
     }
 
+    public void AddOresMined()
+    {
+        oresMined++;
+    }
+
     public void ChnageBtnState(bool state)
     {
         btn.interactable = state;
     }
+
+
     public void Btn()
     {
         print("btn");
