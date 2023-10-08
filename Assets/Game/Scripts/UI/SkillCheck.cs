@@ -30,7 +30,7 @@ public class SkillCheck : MonoBehaviour
 
     void Randomise()
     {
-        correctValue = Random.Range(0f, 1f);
+        correctValue = Random.Range(0.200f, 1f);
         lerpDuration = Random.Range(1.5f, 2f);
 
         skillCheckResult = false;
