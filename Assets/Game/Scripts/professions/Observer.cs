@@ -8,7 +8,6 @@ public class Observer : MonoBehaviour
 {
     [SerializeField] Button btn;
     [SerializeField] GameObject prefab;
-
     public static Observer Instance { get; private set; }
     private void Awake()
     {
@@ -35,6 +34,7 @@ public class Observer : MonoBehaviour
 
     public void RemoveListener()
     {
+
         print("REMOVE SCANNER");
         SelectionController.Instance.onClick = new UnityEvent();
     }

@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 3683675171100875458}
+  questID: 1
 --- !u!114 &3683675171100875458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startMinutes: 0
-  startSeconds: 10
+  startSeconds: 30
   currentTimeText: {fileID: 5990715620078735304}
   onTimerEnd:
     m_PersistentCalls:
@@ -130,6 +131,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  chanceForSkillCheck: 0.1
 --- !u!1 &5907326193595991702
 GameObject:
   m_ObjectHideFlags: 0

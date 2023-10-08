@@ -247,7 +247,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -272,6 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 3290164705572739866}
+  questID: 0
 --- !u!114 &3290164705572739866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,7 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startMinutes: 0
-  startSeconds: 5
+  startSeconds: 45
   currentTimeText: {fileID: 7381914865143068456}
   onTimerEnd:
     m_PersistentCalls:
@@ -302,3 +303,4 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  chanceForSkillCheck: 0.1

@@ -381,6 +381,8 @@ MonoBehaviour:
   drillSpeed: 2
   lineRenderer: {fileID: 1779892269068054752}
   timer: {fileID: 349347841014495168}
+  questID: 3
+  requiredOresMined: 3
 --- !u!114 &349347841014495168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,7 +396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startMinutes: 0
-  startSeconds: 10
+  startSeconds: 15
   currentTimeText: {fileID: 3324202778084262955}
   onTimerEnd:
     m_PersistentCalls:
@@ -411,6 +413,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  chanceForSkillCheck: 0.1
 --- !u!1 &1779892270017574710
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,6 +514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsTrigger: 0
+  collision: {fileID: 0}
 --- !u!50 &1779892270017574699
 Rigidbody2D:
   serializedVersion: 4
