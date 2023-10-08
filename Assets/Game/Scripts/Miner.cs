@@ -8,6 +8,8 @@ public class Miner : MonoBehaviour
     [SerializeField] float drillSpeed = 5;
     [SerializeField] LineRenderer lineRenderer;
     [SerializeField] Timer timer;
+    [SerializeField] int questID;
+    [SerializeField] int requiredOresMined;
     bool timerStarted = false;
 
     private void Start()
@@ -34,11 +36,19 @@ public class Miner : MonoBehaviour
             timer.currentTimeText.gameObject.SetActive(true);
             timer.StartTimer();
             timerStarted = true;
+
+            Engineer.Instance.AddOresMined();
+
+            if(Engineer.Instance.oresMined >= requiredOresMined)
+            {
+                QuestController.instance.ChangeQuestState(questID);
+            }
         }
     }
 
     public void EndDrill()
     {
+        drill.collision.GetComponent<Mineable>().Discover();
         SelectionController.Instance.ChangeButtonsState(true);
         Engineer.Instance.RemoveListener();
         Destroy(gameObject);

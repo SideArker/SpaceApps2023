@@ -8,7 +8,6 @@ public class Geologist : MonoBehaviour
 {
     [SerializeField] Button btn;
     [SerializeField] GameObject scanner;
-
     public static Geologist Instance { get; private set; }
     private void Awake()
     {

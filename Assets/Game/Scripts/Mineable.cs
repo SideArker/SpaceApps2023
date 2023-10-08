@@ -6,6 +6,7 @@ using UnityEngine;
 public class Mineable : MonoBehaviour
 {
     [SerializeField] Sprite OreSprite;
+    [SerializeField] Sprite NormalSprite;
     SpriteRenderer rend;
     public bool isVisible = false;
     private void Start()
@@ -19,7 +20,14 @@ public class Mineable : MonoBehaviour
         {
             isVisible = true;
             tag = "mineable";
+            NormalSprite = rend.sprite;
             rend.sprite = OreSprite;
         }
+        else {
+            rend.sprite = NormalSprite; 
+            isVisible = false;
+            tag = "Untagged";
+        }
+
     }
 }

@@ -6,6 +6,8 @@ public class Scanner : MonoBehaviour
 {
     [SerializeField] float radius;
     [SerializeField] Timer timer;
+    [SerializeField] int questID;
+    bool foundMine;
     private void Start()
     {
         timer.StartTimer();
@@ -22,9 +24,11 @@ public class Scanner : MonoBehaviour
         for (int i = 0; i < hits.Length; i++)
         {
             var mineable = hits[i].gameObject.GetComponent<Mineable>();
-            if (mineable) mineable.Discover();
+            if (mineable) { mineable.Discover(); foundMine = true; }
         }
 
+
+        if(foundMine) QuestController.instance.ChangeQuestState(questID);
         Destroy(gameObject);
     }
 }

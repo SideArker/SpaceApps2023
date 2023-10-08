@@ -1,10 +1,10 @@
 using NaughtyAttributes;
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UIElements;
 
 public class Timer : MonoBehaviour
 {
@@ -14,15 +14,77 @@ public class Timer : MonoBehaviour
     [SerializeField, Range(0,59)] int startSeconds;
     public TMP_Text currentTimeText;
     public UnityEvent onTimerEnd;
+
+    [SerializeField] float chanceForSkillCheck = 0.1f;
+    bool onGoingSkillCheck = false;
+    bool rollingSkillCheck = false;
     private void Start()
     {
         currentTime = startMinutes * 60 + startSeconds;
     }
+
+    public void ChanceForSkillCheck(float chance)
+    {
+        chanceForSkillCheck = chance;
+    }
+
+    IEnumerator SkillCheckTime()
+    {
+        rollingSkillCheck = true;
+
+        float randomRoll = UnityEngine.Random.Range(0f, 1f);
+
+        while (chanceForSkillCheck < randomRoll)
+        {
+
+            yield return new WaitForSeconds(1f);
+
+            randomRoll = UnityEngine.Random.Range(0f, 1f);
+        }
+
+        SkillCheck.instance.SkillCheckStart();
+
+        onGoingSkillCheck = true;
+
+        // keep waiting for skill check
+
+        while (!SkillCheck.instance.isDone)
+        {
+            yield return new WaitForSeconds(0.1f);
+        }
+
+        bool result = SkillCheck.instance.skillCheckResult;
+
+        if(result)
+        {
+            Debug.Log("Positive skillcheck, no bad things happen");
+        }
+        else
+        {
+            Debug.Log("Bad skillcheck, you go back in time");
+
+            currentTime += (startMinutes * 60 + startSeconds) * 0.3f;
+        }
+        
+        onGoingSkillCheck = false;
+        rollingSkillCheck = false;
+
+        yield break;
+    }
+
+
     private void Update()
     {
-        if(timerActive)
+        if(timerActive && !onGoingSkillCheck)
         {
             currentTime -= Time.deltaTime;
+
+            if (!rollingSkillCheck) 
+            {
+                Debug.Log("h");
+                StartCoroutine(SkillCheckTime());
+            }
+
             if(currentTime <= 0)
             {
                 timerActive = false;

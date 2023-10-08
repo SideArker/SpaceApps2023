@@ -8,7 +8,6 @@ public class Medic : MonoBehaviour
 {
     [SerializeField] Button btn;
     [SerializeField] Timer timer;
-
     public static Medic Instance { get; private set; }
     private void Awake()
     {

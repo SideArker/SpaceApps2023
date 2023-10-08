@@ -5,6 +5,7 @@ using UnityEngine;
 public class Pomp : MonoBehaviour
 {
     [SerializeField] Timer timer;
+    [SerializeField] int questID;
     private void Start()
     {
         timer.StartTimer();
@@ -13,6 +14,8 @@ public class Pomp : MonoBehaviour
 
     public void OnEnd()
     {
+        QuestController.instance.ChangeQuestState(questID);
+
         SelectionController.Instance.ChangeButtonsState(true);
         Diver.Instance.RemoveListener();
 
