@@ -14,7 +14,7 @@ public class Scanner : MonoBehaviour
 
     public void OnEnd()
     {
-        Geologist.Instance.ChnageBtnState(true);
+        SelectionController.Instance.ChangeButtonsState(true);
         Geologist.Instance.RemoveListener();
 
         Collider2D[] hits = Physics2D.OverlapCircleAll(gameObject.transform.position, radius);

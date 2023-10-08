@@ -23,6 +23,15 @@ public class SelectionController : MonoBehaviour
     {
         Instance = this;
     }
+    public void ChangeButtonsState(bool state)
+    {
+        if (Engineer.Instance) Engineer.Instance.ChnageBtnState(state);
+        if (Biologist.Instance) Geologist.Instance.ChnageBtnState(state);
+        if (Geologist.Instance) Biologist.Instance.ChnageBtnState(state);
+        if (Observer.Instance) Observer.Instance.ChnageBtnState(state);
+        if (Diver.Instance) Diver.Instance.ChnageBtnState(state);
+        if (Medic.Instance) Medic.Instance.ChnageBtnState(state);
+    }
     public void ShowTilesSelection(TypeOfTile tot)
     {
         print("show");

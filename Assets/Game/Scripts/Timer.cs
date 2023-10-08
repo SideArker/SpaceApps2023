@@ -28,6 +28,7 @@ public class Timer : MonoBehaviour
                 timerActive = false;
                 Start();
                 print("Timer Finished");
+                currentTimeText.gameObject.SetActive(false);
                 onTimerEnd.Invoke();
             }
         }

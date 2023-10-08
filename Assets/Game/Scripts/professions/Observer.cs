@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class Biologist : MonoBehaviour
+public class Observer : MonoBehaviour
 {
     [SerializeField] Button btn;
     [SerializeField] GameObject prefab;
 
-    public static Biologist Instance { get; private set; }
+    public static Observer Instance { get; private set; }
     private void Awake()
     {
         Instance = this;

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Examinate : MonoBehaviour
+public class Telescope : MonoBehaviour
 {
     [SerializeField] Timer timer;
     private void Start()
@@ -14,7 +14,7 @@ public class Examinate : MonoBehaviour
     public void OnEnd()
     {
         SelectionController.Instance.ChangeButtonsState(true);
-        Biologist.Instance.RemoveListener();
+        Observer.Instance.RemoveListener();
 
         Destroy(gameObject);
     }

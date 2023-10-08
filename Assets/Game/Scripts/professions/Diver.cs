@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class Biologist : MonoBehaviour
+public class Diver : MonoBehaviour
 {
     [SerializeField] Button btn;
     [SerializeField] GameObject prefab;
 
-    public static Biologist Instance { get; private set; }
+    public static Diver Instance { get; private set; }
     private void Awake()
     {
         Instance = this;
@@ -22,7 +22,7 @@ public class Biologist : MonoBehaviour
     public void Btn()
     {
         print("btn");
-        SelectionController.Instance.ShowTilesSelection(TypeOfTile.surface);
+        SelectionController.Instance.ShowTilesSelection(TypeOfTile.liquid);
         SelectionController.Instance.onClick.AddListener(Examinate);
         SelectionController.Instance.ChangeButtonsState(false);
     }
