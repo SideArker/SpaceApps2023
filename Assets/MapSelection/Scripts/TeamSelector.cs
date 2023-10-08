@@ -65,7 +65,8 @@ public class TeamSelector : MonoBehaviour
     {
         if (astronauts.Count >= maxAstronautCount)
         {
-            screenFade.Play("ScreenFadeGame");
+            screenFade.gameObject.SetActive(true);
+            screenFade.Play("ScreenFade");
         }
     }
 }

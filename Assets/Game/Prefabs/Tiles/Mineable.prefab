@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfTile: 1
+  audio: {fileID: 5442633147242957810, guid: c09b878ef8a2b0f45b4889250db8515a, type: 3}
 --- !u!61 &6904822430031808493
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -289,4 +290,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OreSprite: {fileID: 0}
+  NormalSprite: {fileID: 0}
   isVisible: 0

@@ -7,6 +7,8 @@ public class SelectionScript : MonoBehaviour
     SpriteRenderer rend;
     Collider2D col;
     [SerializeField] TypeOfTile typeOfTile;
+
+    [SerializeField] AudioSource audio;
     private void Start()
     {
         rend = GetComponent<SpriteRenderer>();
@@ -42,6 +44,7 @@ public class SelectionScript : MonoBehaviour
 
     private void OnMouseDown()
     {
+        audio.Play();
         SelectionController.Instance.sender = transform;
         SelectionController.Instance.onClick.Invoke();
         SelectionController.Instance.HideTilesSelection(typeOfTile);
