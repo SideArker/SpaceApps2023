@@ -5395,7 +5395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 579031d5e05cb2049b2ac7eee9365620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAstronautCount: 5
+  maxAstronautCount: 7
   counters:
   - {fileID: 1900629574}
   - {fileID: 462457602}
@@ -8442,7 +8442,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15.1
+  m_fontSize: 12.55
   m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8577,12 +8577,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27.45
+  m_fontSize: 20
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 20
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -14150,7 +14150,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Atmosphere Studies
+  m_text: Study the atmosphere
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5b3fe395bc745554ab72311bdabfaf65, type: 2}
   m_sharedMaterial: {fileID: 4039492701491641456, guid: 5b3fe395bc745554ab72311bdabfaf65, type: 2}
@@ -14177,11 +14177,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.8
+  m_fontSize: 17.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 0
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
@@ -15086,7 +15086,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0/5
+  m_text: 0/7
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5b3fe395bc745554ab72311bdabfaf65, type: 2}
   m_sharedMaterial: {fileID: 4039492701491641456, guid: 5b3fe395bc745554ab72311bdabfaf65, type: 2}
@@ -19829,7 +19829,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Surface Studies
+  m_text: Study the surface
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5b3fe395bc745554ab72311bdabfaf65, type: 2}
   m_sharedMaterial: {fileID: 4039492701491641456, guid: 5b3fe395bc745554ab72311bdabfaf65, type: 2}
@@ -19856,7 +19856,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.8
+  m_fontSize: 21
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -22398,7 +22398,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 16.970901, y: -1.7198}
+  m_AnchoredPosition: {x: 16.970901, y: -1.7198029}
   m_SizeDelta: {x: -59.4583, y: -3.4396}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2132730015
@@ -22421,7 +22421,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Study Micro-Organisms
+  m_text: Study the Micro-Organisms
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5b3fe395bc745554ab72311bdabfaf65, type: 2}
   m_sharedMaterial: {fileID: 4039492701491641456, guid: 5b3fe395bc745554ab72311bdabfaf65, type: 2}
@@ -22448,7 +22448,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17
+  m_fontSize: 14.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -22925,7 +22925,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gather methane
+  m_text: Gather liquid methane
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5b3fe395bc745554ab72311bdabfaf65, type: 2}
   m_sharedMaterial: {fileID: 4039492701491641456, guid: 5b3fe395bc745554ab72311bdabfaf65, type: 2}
@@ -22952,11 +22952,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.5
+  m_fontSize: 17
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 0
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1

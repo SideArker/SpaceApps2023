@@ -9,6 +9,11 @@ using UnityEngine.UI;
 
 public class ProfessionPanel : MonoBehaviour
 {
+    public static ProfessionPanel Instance { get; private set; }
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     [SerializeField] TMP_Text Count;
     [SerializeField] Transform damagedIcon;

@@ -33,7 +33,7 @@ public class Miner : MonoBehaviour
         }
         else if(!timerStarted)
         {
-            timer.currentTimeText.gameObject.SetActive(true);
+            //timer.currentTimeText.gameObject.SetActive(true);
             timer.StartTimer();
             timerStarted = true;
 
