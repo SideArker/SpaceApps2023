@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class QuestController : MonoBehaviour
@@ -11,13 +12,15 @@ public class QuestController : MonoBehaviour
     public static QuestController instance;
     [SerializeField] bool[] questState = new bool[5];
     [SerializeField] GameObject[] questObjects = new GameObject[5];
-    [SerializeField] GameObject WinScreen;
+    [SerializeField] UnityEvent OnGameWin;
 
     private void Awake()
     {
         instance = this;
     }
 
+
+    [Button]
     public void ChangeQuestState(int questID)
     {
         questState[questID] = true;
@@ -29,6 +32,8 @@ public class QuestController : MonoBehaviour
         // All quests completed
 
         Debug.Log("Quests completed. Mision finished");
+
+        OnGameWin.Invoke();
 
     }
 }
