@@ -1190,10 +1190,56 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 254762067091127404, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 254762067091127404, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 254762067091127404, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 254762067091127404, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 254762067091127404, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 856461327074117937, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_text
+      value: Study the atmosphere
+      objectReference: {fileID: 0}
+    - target: {fileID: 856461327074117937, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_fontSize
+      value: 19.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 856461327297709786, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_text
+      value: 'Study the Micro-Organisms
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 856461327297709786, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 856461328121508516, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
       propertyPath: m_text
       value: Gather Ice (3x)
       objectReference: {fileID: 0}
+    - target: {fileID: 856461328291436817, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_text
+      value: Study the surface
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180389657165084140, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1423709577843272332, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1209,6 +1255,126 @@ PrefabInstance:
     - target: {fileID: 1423709577843272332, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297006719923, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297006719923, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297006719923, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297006719923, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297006719923, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297362041531, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297362041531, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297362041531, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297362041531, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297362041531, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297893633265, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297893633265, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297893633265, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297893633265, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297893633265, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297944191637, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297944191637, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297944191637, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297944191637, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510297944191637, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510298197490497, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_text
+      value: Study the atmosphere
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510298197490497, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_fontSize
+      value: 17.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510298197490497, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510298197490497, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510298523038196, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_text
+      value: Study the Micro-Organisms
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510298523038196, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_fontSize
+      value: 14.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510298523038197, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1.169
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510298523038197, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.0241
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510298785696679, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_text
+      value: Study the surface
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907510298785696679, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_fontSize
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 3992710989679963814, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1305,6 +1471,14 @@ PrefabInstance:
     - target: {fileID: 3992710990080554045, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4764686125790653404, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -46.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4764686125790653404, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 23.35
       objectReference: {fileID: 0}
     - target: {fileID: 6661347635745993996, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1412,11 +1586,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7762067648334824018, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
       propertyPath: m_text
-      value: Gather methane
+      value: Gather liquid methane
       objectReference: {fileID: 0}
     - target: {fileID: 7762067648334824018, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
       propertyPath: m_fontSize
-      value: 21.65
+      value: 18.55
       objectReference: {fileID: 0}
     - target: {fileID: 8329596891191663226, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1480,10 +1654,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8329596892544986628, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931614392103081138, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_text
+      value: Gather liquid methane
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931614392103081138, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_fontSize
+      value: 17.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931614392103081138, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+      propertyPath: m_fontSizeMin
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3992710989623728827, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
+    - {fileID: 3992710990080554042, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6661347637184314469, guid: 215dedf698c6cf94184fa9e115641f17, type: 3}
