@@ -28,26 +28,29 @@ public class Miner : MonoBehaviour
             drill.transform.position += newPos;
             if(drill.transform.position.y <= -18)
             {
-                EndDrill();
+
+                SelectionController.Instance.ChangeButtonsState(true);
+                Engineer.Instance.RemoveListener();
+                Destroy(gameObject);
             }
         }
         else if(!timerStarted)
         {
-            timer.currentTimeText.gameObject.SetActive(true);
+            //timer.currentTimeText.gameObject.SetActive(true);
             timer.StartTimer();
             timerStarted = true;
 
             Engineer.Instance.AddOresMined();
 
-            if(Engineer.Instance.oresMined >= requiredOresMined)
-            {
-                QuestController.instance.ChangeQuestState(questID);
-            }
         }
     }
 
     public void EndDrill()
     {
+        if (Engineer.Instance.oresMined >= requiredOresMined)
+        {
+            QuestController.instance.ChangeQuestState(questID);
+        }
         drill.collision.GetComponent<Mineable>().Discover();
         SelectionController.Instance.ChangeButtonsState(true);
         Engineer.Instance.RemoveListener();

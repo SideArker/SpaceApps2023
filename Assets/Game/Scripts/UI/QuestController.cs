@@ -13,6 +13,9 @@ public class QuestController : MonoBehaviour
     [SerializeField] bool[] questState = new bool[5];
     [SerializeField] GameObject[] questObjects = new GameObject[5];
     [SerializeField] UnityEvent OnGameWin;
+    [SerializeField] InfoScreen infosc;
+    [SerializeField] Image vanisher;
+    public QuestInfo[] questInfos;
 
     private void Awake()
     {
@@ -27,6 +30,13 @@ public class QuestController : MonoBehaviour
         questObjects[questID].GetComponent<Toggle>().isOn = true;
         questObjects[questID].GetComponentInChildren<TMP_Text>().fontStyle = FontStyles.Strikethrough;
 
+        Time.timeScale = 0;
+        UIStopWatch.Instance.stopwatch.Stop();
+        infosc.sprite = questInfos[questID].sprite;
+        infosc.desc = questInfos[questID].desc;
+        infosc.Setup();
+        infosc.Show();
+
         if (questState.Any(x => x == false)) return;
 
         // All quests completed
@@ -35,5 +45,12 @@ public class QuestController : MonoBehaviour
 
         OnGameWin.Invoke();
 
+    }
+
+    public void TimeScale1()
+    {
+        Time.timeScale = 1;
+        UIStopWatch.Instance.stopwatch.Start();
+        vanisher.enabled = false;
     }
 }

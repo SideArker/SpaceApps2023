@@ -3,11 +3,17 @@ using System.Diagnostics;
 using TMPro;
 using UnityEngine;
 
-public class Stopwatch : MonoBehaviour
+public class UIStopWatch : MonoBehaviour
 {
+    public static UIStopWatch Instance { get; private set; }
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     [SerializeField] TMP_Text text;
 
-    System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
+    public System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
 
 
     private void Start()
