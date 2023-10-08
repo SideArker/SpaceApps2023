@@ -184,6 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfTile: 3
+  audio: {fileID: 5442633147242957810, guid: c09b878ef8a2b0f45b4889250db8515a, type: 3}
 --- !u!61 &7188298640768746770
 BoxCollider2D:
   m_ObjectHideFlags: 0

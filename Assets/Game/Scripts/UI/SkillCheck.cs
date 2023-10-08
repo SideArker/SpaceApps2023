@@ -13,6 +13,7 @@ public class SkillCheck : MonoBehaviour
 
     [SerializeField] Slider skillcheckSlider;
     [SerializeField] Slider correctValueIndicator;
+    [SerializeField] AudioSource click;
 
     [SerializeField] [Range(0f, .350f)] float rangeValue;
 
@@ -53,6 +54,7 @@ public class SkillCheck : MonoBehaviour
 
             if (stop)
             {
+                click.Play();
                 float stoppedValue = skillcheckSlider.value;
 
                 if(stoppedValue > correctValue - rangeValue && stoppedValue < correctValue + rangeValue)

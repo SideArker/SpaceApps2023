@@ -22,6 +22,15 @@ public class QuestController : MonoBehaviour
         instance = this;
     }
 
+    IEnumerator waitUntilInfoClosed()
+    {
+        while(infosc.gameObject.activeSelf)
+        {
+            yield return new WaitForSeconds(0.2f);
+            OnGameWin.Invoke();
+        }
+    }
+
 
     [Button]
     public void ChangeQuestState(int questID)
@@ -42,9 +51,8 @@ public class QuestController : MonoBehaviour
         // All quests completed
 
         Debug.Log("Quests completed. Mision finished");
-
-        OnGameWin.Invoke();
-
+        StartCoroutine(
+                waitUntilInfoClosed());
     }
 
     public void TimeScale1()
