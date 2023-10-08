@@ -26,8 +26,7 @@ public class Miner : MonoBehaviour
             drill.transform.position += newPos;
             if(drill.transform.position.y <= -18)
             {
-                Engineer.Instance.ChnageBtnState(true);
-                Destroy(gameObject);
+                EndDrill();
             }
         }
         else if(!timerStarted)
@@ -41,6 +40,7 @@ public class Miner : MonoBehaviour
     public void EndDrill()
     {
         Engineer.Instance.ChnageBtnState(true);
+        Engineer.Instance.RemoveListener();
         Destroy(gameObject);
     }
 }
