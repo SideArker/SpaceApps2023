@@ -5,38 +5,28 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-using static UnityEngine.UI.Button;
 
 public class ProfessionPanel : MonoBehaviour
 {
-    public Color panelColor;
-    public Sprite icon;
-    public string name;
-    public int count;
-    public GameObject prefabWithScript;
-    public UnityEvent onActivate;
-    Image panel;
-    [SerializeField] Image iconImage;
-    [SerializeField] TMP_Text nameText;
+
     [SerializeField] TMP_Text Count;
+    [SerializeField] Transform damagedIcon;
+    [SerializeField] int id;
+    int count;
+    bool isDamaged = false;
     private void Start()
     {
-        panel = GetComponent<Image>();
-        Init(); 
+        SetCountOfPeople(TeamSelector.GetCountOfAstronaut(id));
     }
-    private void Init()
+    public void SetCountOfPeople(int value)
     {
-        panel.color = panelColor;
-        iconImage.sprite = icon;
+        count = value;
         Count.text = count.ToString();
-        if(prefabWithScript) Instantiate(prefabWithScript);
+        if (value == 0) Destroy(gameObject);
     }
-    public void OnBtnClick()
+    public void Damage()
     {
-        onActivate.Invoke();
-    }
-    public void TEST()
-    {
-        print("test");
+        isDamaged = true;
+        damagedIcon.gameObject.SetActive(true);
     }
 }

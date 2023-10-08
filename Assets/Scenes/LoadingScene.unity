@@ -308,6 +308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 660296649}
+  loading_text: {fileID: 1691362125}
 --- !u!1 &660296647
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,8 @@ public class Miner : MonoBehaviour
 
     private void Start()
     {
+        Engineer.isMining = true;
+        Engineer.Instance.ChnageBtnState(false);
         timer = GetComponent<Timer>();
         lineRenderer.SetPosition(0, new Vector3(transform.position.x + 0.07f, transform.position.y));
     }
@@ -22,6 +24,10 @@ public class Miner : MonoBehaviour
             var newPos = Vector3.down * drillSpeed * Time.deltaTime;
             lineRenderer.SetPosition(1, new Vector3(transform.position.x + 0.07f, drill.transform.position.y + newPos.y));
             drill.transform.position += newPos;
+            if(drill.transform.position.y <= -18)
+            {
+                EndDrill();
+            }
         }
         else if(!timerStarted)
         {
@@ -33,6 +39,8 @@ public class Miner : MonoBehaviour
 
     public void EndDrill()
     {
+        Engineer.Instance.ChnageBtnState(true);
+        Engineer.Instance.RemoveListener();
         Destroy(gameObject);
     }
 }
