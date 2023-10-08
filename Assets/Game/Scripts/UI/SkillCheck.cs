@@ -50,6 +50,10 @@ public class SkillCheck : MonoBehaviour
                     Debug.Log("invoke");
                     SkillCheckPass.Invoke();
                 }
+                else
+                {
+                    Debug.Log("skill check fail");
+                }
                 break;
             }
         }
