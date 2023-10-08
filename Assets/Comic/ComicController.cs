@@ -11,10 +11,9 @@ public class ComicController : MonoBehaviour
     private void Start()
     {
         int timeTakenInSeconds = (int)UIStopWatch.Instance.stopwatch.Elapsed.TotalSeconds;
-
-        if (timeTakenInSeconds < secondsForEndings[0]) ending.sprite = endings[0];
-        if (timeTakenInSeconds < secondsForEndings[1]) ending.sprite = endings[1];
         if (timeTakenInSeconds > secondsForEndings[2]) ending.sprite = endings[2];
+        if (timeTakenInSeconds < secondsForEndings[1]) ending.sprite = endings[1];
+        if (timeTakenInSeconds < secondsForEndings[0]) ending.sprite = endings[0];
 
 
 
