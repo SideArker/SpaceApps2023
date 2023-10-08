@@ -11,10 +11,20 @@ public class Scanner : MonoBehaviour
         timer.StartTimer();
     }
 
+
     public void OnEnd()
     {
         Geologist.Instance.ChnageBtnState(true);
         Geologist.Instance.RemoveListener();
+
+        Collider2D[] hits = Physics2D.OverlapCircleAll(gameObject.transform.position, radius);
+
+        for (int i = 0; i < hits.Length; i++)
+        {
+            var mineable = hits[i].gameObject.GetComponent<Mineable>();
+            if (mineable) mineable.Discover();
+        }
+
         Destroy(gameObject);
     }
 }

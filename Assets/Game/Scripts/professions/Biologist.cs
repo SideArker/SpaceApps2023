@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class Geologist : MonoBehaviour
+public class Biologist : MonoBehaviour
 {
     [SerializeField] Button btn;
-    [SerializeField] GameObject scanner;
+    [SerializeField] GameObject prefab;
 
-    public static Geologist Instance { get; private set; }
+    public static Biologist Instance { get; private set; }
     private void Awake()
     {
         Instance = this;
@@ -23,13 +23,12 @@ public class Geologist : MonoBehaviour
     {
         print("btn");
         SelectionController.Instance.ShowTilesSelection(TypeOfTile.surface);
-        SelectionController.Instance.onClick.AddListener(SetScanner);
+        SelectionController.Instance.onClick.AddListener(Examinate);
     }
-    public void SetScanner()
+    public void Examinate()
     {
-        print("setting  scan");
         var posTrans = SelectionController.Instance.sender;
-        Instantiate(scanner, posTrans);
+        Instantiate(prefab, posTrans);
     }
 
     public void RemoveListener()
