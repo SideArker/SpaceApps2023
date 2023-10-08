@@ -25,11 +25,12 @@ public class SelectionController : MonoBehaviour
     }
     public void ChangeButtonsState(bool state)
     {
-        Engineer.Instance.ChnageBtnState(state);
-        Geologist.Instance.ChnageBtnState(state);
-        Biologist.Instance.ChnageBtnState(state);
-        Observer.Instance.ChnageBtnState(state);
-        Diver.Instance.ChnageBtnState(state);
+        if (Engineer.Instance) Engineer.Instance.ChnageBtnState(state);
+        if (Biologist.Instance) Geologist.Instance.ChnageBtnState(state);
+        if (Geologist.Instance) Biologist.Instance.ChnageBtnState(state);
+        if (Observer.Instance) Observer.Instance.ChnageBtnState(state);
+        if (Diver.Instance) Diver.Instance.ChnageBtnState(state);
+        if (Medic.Instance) Medic.Instance.ChnageBtnState(state);
     }
     public void ShowTilesSelection(TypeOfTile tot)
     {

@@ -1,3 +1,4 @@
+using NaughtyAttributes;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -24,9 +25,16 @@ public class ProfessionPanel : MonoBehaviour
         Count.text = count.ToString();
         if (value == 0) Destroy(gameObject);
     }
+    [Button]
     public void Damage()
     {
         isDamaged = true;
         damagedIcon.gameObject.SetActive(true);
+    }
+    [Button]
+    public void Heal()
+    {
+        isDamaged = false;
+        damagedIcon.gameObject.SetActive(false);
     }
 }
