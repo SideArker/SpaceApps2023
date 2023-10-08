@@ -299,6 +299,7 @@ GameObject:
   - component: {fileID: 5519234618805276045}
   - component: {fileID: 5519234618805276046}
   - component: {fileID: 9076261326685818439}
+  - component: {fileID: 1469235231776912041}
   m_Layer: 5
   m_Name: Observer
   m_TagString: Untagged
@@ -384,6 +385,20 @@ MonoBehaviour:
   Count: {fileID: 5519234618882606467}
   damagedIcon: {fileID: 8893660369456925864}
   id: 3
+--- !u!114 &1469235231776912041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5519234618805276040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cb757f10c71f54490f5cf4702b5733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btn: {fileID: 5519234618161291060}
+  prefab: {fileID: 0}
 --- !u!1 &5519234618882606477
 GameObject:
   m_ObjectHideFlags: 0
