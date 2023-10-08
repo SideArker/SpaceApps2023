@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class Engineer : MonoBehaviour
+public class Geologist : MonoBehaviour
 {
-    public static bool isMining = false;
-    [SerializeField] GameObject miner;
     [SerializeField] Button btn;
-    public static Engineer Instance { get; private set; }
+    [SerializeField] GameObject scanner;
+
+    public static Geologist Instance { get; private set; }
     private void Awake()
     {
         Instance = this;
@@ -23,18 +23,18 @@ public class Engineer : MonoBehaviour
     {
         print("btn");
         SelectionController.Instance.ShowTilesSelection(TypeOfTile.surface);
-        SelectionController.Instance.onClick.AddListener(SetMiner);
+        SelectionController.Instance.onClick.AddListener(() => SetScanner());
     }
-    public void SetMiner()
+    public void SetScanner()
     {
-        print("setting  miner");
+        print("setting  scan");
         var posTrans = SelectionController.Instance.sender;
-        Instantiate(miner, posTrans);
-    }
-    public void RemoveListener()
-    {
-        print("REMOVE MINER");
-        SelectionController.Instance.onClick.RemoveAllListeners();
+        Instantiate(scanner, posTrans);
     }
 
+    public void RemoveListener()
+    {
+        print("REMOVE SCANNER");
+        SelectionController.Instance.onClick = new UnityEvent();
+    }
 }
