@@ -24,6 +24,7 @@ public class Geologist : MonoBehaviour
         print("btn");
         SelectionController.Instance.ShowTilesSelection(TypeOfTile.surface);
         SelectionController.Instance.onClick.AddListener(SetScanner);
+        SelectionController.Instance.ChangeButtonsState(false);
     }
     public void SetScanner()
     {

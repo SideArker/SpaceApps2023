@@ -13,7 +13,7 @@ public class Telescope : MonoBehaviour
 
     public void OnEnd()
     {
-        Observer.Instance.ChnageBtnState(true);
+        SelectionController.Instance.ChangeButtonsState(true);
         Observer.Instance.RemoveListener();
 
         Destroy(gameObject);

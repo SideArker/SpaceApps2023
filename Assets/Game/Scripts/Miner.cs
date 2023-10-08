@@ -13,7 +13,7 @@ public class Miner : MonoBehaviour
     private void Start()
     {
         Engineer.isMining = true;
-        Engineer.Instance.ChnageBtnState(false);
+        SelectionController.Instance.ChangeButtonsState(false);
         timer = GetComponent<Timer>();
         lineRenderer.SetPosition(0, new Vector3(transform.position.x + 0.07f, transform.position.y));
     }
@@ -39,7 +39,7 @@ public class Miner : MonoBehaviour
 
     public void EndDrill()
     {
-        Engineer.Instance.ChnageBtnState(true);
+        SelectionController.Instance.ChangeButtonsState(true);
         Engineer.Instance.RemoveListener();
         Destroy(gameObject);
     }

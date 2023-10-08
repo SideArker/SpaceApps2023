@@ -198,9 +198,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ProfessionPanel, Assembly-CSharp
-        m_MethodName: OnBtnClick
+      - m_Target: {fileID: 2952759246632983738}
+        m_TargetAssemblyTypeName: Diver, Assembly-CSharp
+        m_MethodName: Btn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -299,6 +299,7 @@ GameObject:
   - component: {fileID: 5519234618805276045}
   - component: {fileID: 5519234618805276046}
   - component: {fileID: 9076261326685818439}
+  - component: {fileID: 2952759246632983738}
   m_Layer: 5
   m_Name: Diver
   m_TagString: Untagged
@@ -384,6 +385,20 @@ MonoBehaviour:
   Count: {fileID: 5519234618882606467}
   damagedIcon: {fileID: 8893660369456925864}
   id: 4
+--- !u!114 &2952759246632983738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5519234618805276040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf658e8e2dc5e354e943d490fb2560c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btn: {fileID: 5519234618161291060}
+  prefab: {fileID: 4565693486092895386, guid: a36dfebdaf5d9824fab63f6d982880e8, type: 3}
 --- !u!1 &5519234618882606477
 GameObject:
   m_ObjectHideFlags: 0
